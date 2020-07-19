@@ -1,4 +1,4 @@
-var api_url = "https://libraryprojectapi.herokuapp.com/";
+var api_url = "https://libraryprojectapi.herokuapp.com";
 // var api_url = "http://127.0.0.1:5000";
 
 function deleteCookies(cname, cvalue, exdays) {
