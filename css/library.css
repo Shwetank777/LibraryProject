@@ -1,0 +1,45 @@
+.shelf-img {
+	width: 100%;
+	margin-left: -13%;
+	/* margin-bottom: 100%; */
+}
+.shelf {
+	margin-top: -50px;
+	width: 100%;
+}
+.shelf-book {
+	width: 80%;
+	margin-top: 100%;
+}
+.center {
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+}
+#welcome {
+	margin-top: 13%;
+	font-family: cursive;
+}
+#main-container {
+	background-color: var(--color3);
+}
+#computer,
+#mobile,
+#temp {
+	display: none;
+}
+@media screen and (max-width: 700px) {
+	.shelf-book {
+		width: 200px;
+		margin-top: 20%;
+		position: relative;
+	}
+	.shelf {
+		margin-top: -20px;
+		width: 100%;
+	}
+	.shelf-img {
+		width: 100%;
+		margin-left: 0%;
+	}
+}

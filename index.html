@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOGin Authentication</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="utf-8" http-equiv="encoding" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="axios/axios.min.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/library.js"></script>
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap-4.3.1-dist/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<div class="row nav-bar same-line">
+			<div class="col-sm-9" id="logo"><img src="images/logo.png" /></div>
+			<div class="col-sm-1">
+				<input
+					type="button"
+					id="nav-text1"
+					onclick="loginForm() ,focusLogin()"
+					value="LoGin"
+				/>
+			</div>
+			<div class="col-sm-1">
+				<input
+					type="button"
+					id="nav-text2"
+					onclick="signupForm() ,focusSignup() "
+					value="SignUP"
+				/>
+			</div>
+			<hr />
+		</div>
+		<div class="row main-container">
+			<div class="col-sm-8">
+				<div class="row">
+					<img id="container-img" src="images/white-texture.png" />
+				</div>
+				<div class="row">
+					<img id="harry-img" src="images/harry.png" />
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="row"><div id="form"></div></div>
+				<div class="row text-content">
+					<hr />
+					<h2>Harry Potter</h2>
+					<p>
+						Harry Potter is a series of fantasy novels written by
+						British author J. K. Rowling. The novels chronicle the
+						lives of a young wizard, Harry Potter, and his friends
+						Hermione Granger and Ron Weasley, all of whom are
+						students at Hogwarts School of Witchcraft and Wizardry.
+						The main story arc concerns Harry's struggle against
+						Lord Voldemort, a dark wizard who intends to become
+						immortal, overthrow the wizard governing body known as
+						the Ministry of Magic and subjugate all wizards and
+						Muggles (non-magical people). <br /><br />Since the
+						release of the first novel, Harry Potter and the
+						Philosopher's Stone, on 26 June 1997, the books have
+						found immense popularity, critical acclaim and
+						commercial success worldwide. They have attracted a wide
+						adult audience as well as younger readers and are often
+						considered cornerstones of modern young adult
+						literature. As of February 2018, the books have sold
+						more than 500 million copies worldwide, making them the
+						best-selling book series in history, and have been
+						translated into eighty languages. The last four books
+						consecutively set records as the fastest-selling books
+						in history, with the final installment selling roughly
+						eleven million copies in the United States within
+						twenty-four hours This is a web-page to read the famous
+						Harry Potter series. It contains the pdf not to just
+						read but to download it, you just need to signup and
+						login into your account anytime you want. Thanks for
+						visiting!! of its release. <br /><br />This is a
+						web-page to read the famous Harry Potter series. It
+						contains the pdf not to just read but to download it,
+						you just need to signup and login into your account
+						anytime you want. <br /><b>Thanks for visiting!!!</b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="forms">
+			<div id="signup-form-text">
+				<form class="signup-box">
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Name.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="text"
+								id="name"
+								placeholder="Full Name"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">M.No.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="text"
+								id="phone"
+								placeholder="Mobile No."
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Email.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="email"
+								id="emailid"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Username.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="text"
+								id="username"
+								placeholder="Username"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Password.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="password"
+								id="password"
+								placeholder="Create-Password"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-4"></div>
+						<div class="col-sm-4"></div>
+						<div class="col-sm-4">
+							<button
+								class="button1"
+								onclick="insertSignup()"
+								type="button"
+							>
+								SignUP
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="login-form-text">
+				<form class="login-box">
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Username.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="text"
+								id="username"
+								placeholder="Username"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-3">
+							<label class="mobile-view">Password.:</label>
+						</div>
+						<div class="col-sm-7">
+							<input
+								type="password"
+								id="password"
+								placeholder="Password"
+							/>
+						</div>
+					</div>
+					<div class="row same-line gap">
+						<div class="col-sm-4"></div>
+						<div class="col-sm-4"></div>
+						<div class="col-sm-4">
+							<button
+								class="button1"
+								onclick="checkLogin()"
+								type="button"
+							>
+								Login
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

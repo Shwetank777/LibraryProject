@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="utf-8" http-equiv="encoding" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/library.css" />
+		<script src="axios/axios.min.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/library.js"></script>
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap-4.3.1-dist/css/bootstrap.min.css"
+		/>
+	</head>
+
+	<body>
+		<div class="row nav-bar same-line">
+			<div class="col-sm-8" id="logo"><img src="images/logo.png" /></div>
+			<div class="col-sm-2">
+				<div id="welcome"><h1>Welcome</h1></div>
+			</div>
+			<div class="col-sm-1">
+				<input
+					type="button"
+					id="nav-text2"
+					onclick="backToIndex()"
+					value="SignOUT"
+				/>
+			</div>
+			<hr />
+		</div>
+		<div class="row" id="main-container"></div>
+		<div id="computer">
+			<div class="row">
+				<img src="images/harrytext.png" />
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col-sm-3 center">
+						<a href="pdf/part1.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic1.png"
+						/></a>
+					</div>
+					<div class="col-sm-3 center">
+						<a href="pdf/part2.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic2.png"
+						/></a>
+					</div>
+					<div class="col-sm-3 center">
+						<a href="pdf/part3.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic3.png"
+						/></a>
+					</div>
+					<div class="shelf">
+						<img class="shelf-img" src="images/plank.png" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 center">
+						<a href="pdf/part4.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic4.png"
+						/></a>
+					</div>
+					<div class="col-sm-3 center">
+						<a href="pdf/part5.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic5.png"
+						/></a>
+					</div>
+					<div class="col-sm-3 center">
+						<a href="pdf/part6.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic6.png"
+						/></a>
+					</div>
+					<div class="shelf">
+						<img class="shelf-img" src="images/plank.png" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 center">
+						<a href="pdf/part7.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic7.png"
+						/></a>
+					</div>
+					<div class="col-sm-3 center">
+						<a href="pdf/part8.pdf"
+							><img
+								class="shelf-book"
+								src="images/booksimages/pic8.png"
+						/></a>
+					</div>
+
+					<div class="shelf">
+						<img class="shelf-img" src="images/plank.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mobile">
+			<div class="row">
+				<img
+					style="width: 94%; margin-left: 3%;"
+					src="images/harrytext.png"
+				/>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part1.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic1.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part2.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic2.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part3.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic3.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part4.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic4.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part5.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic5.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part6.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic6.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part7.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic7.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+			<div class="row center">
+				<div>
+					<a href="pdf/part8.pdf"
+						><img
+							class="shelf-book"
+							src="images/booksimages/pic8.png"
+					/></a>
+				</div>
+				<div class="shelf">
+					<img class="shelf-img" src="images/plank.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		initialize();
+	</script>
+</html>
